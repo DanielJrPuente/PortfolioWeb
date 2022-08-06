@@ -1,0 +1,32 @@
+{
+  "name": "portfolio-web",
+  "version": "1.0.0",
+  "description": "Web portfolio",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch src/scss:build/css",
+    "css": "gulp css",
+    "dev": "gulp dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielJrPuente/PortfolioWeb.git"
+  },
+  "keywords": [
+    "Sass",
+    "Gulp",
+    "Html",
+    "JavaScript"
+  ],
+  "author": "Daniel Junior Puente Martinez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanielJrPuente/PortfolioWeb.git"
+  },
+  "homepage": "https://github.com/DanielJrPuente/PortfolioWeb#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.54.0"
+  }
+}

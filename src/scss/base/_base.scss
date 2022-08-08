@@ -19,6 +19,8 @@ img{
     max-width: 100%;
 }
 
+strong {font-weight: v.$fw-bold;}
+
 
 // typografhy
 
@@ -32,3 +34,26 @@ h3 {
 h1 {font-size: v.$fs-h1;}
 h2 {font-size: v.$fs-h2;}
 h3 {font-size: v.$fs-h3;}
+
+.section__title {
+    margin-bottom: .25em;
+}
+
+.section__title--intro {
+    font-weight: v.$fw-reg;
+}
+
+.section__title--intro strong {
+    display: block;
+}
+
+.section__subtitle{
+    margin: 0;
+    font-size: v.$fs-h3;
+}
+
+.section__subtitle--intro,
+.section__subtitle--about {
+    background: v.$clr-accent;
+    font-family: v.$ff-secondary;
+}

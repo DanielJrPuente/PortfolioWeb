@@ -17,6 +17,10 @@ img {
   max-width: 100%;
 }
 
+strong {
+  font-weight: 900;
+}
+
 h1,
 h2,
 h3 {
@@ -34,4 +38,27 @@ h2 {
 
 h3 {
   font-size: 1.25rem;
+}
+
+.section__title {
+  margin-bottom: 0.25em;
+}
+
+.section__title--intro {
+  font-weight: 300;
+}
+
+.section__title--intro strong {
+  display: block;
+}
+
+.section__subtitle {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.section__subtitle--intro,
+.section__subtitle--about {
+  background: #16e0bd;
+  font-family: "Source Code Pro", monospace;
 }

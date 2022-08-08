@@ -1,7 +1,34 @@
 @use 'variables' as v;
+
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 }
 
+body{
+    background-color: v.$clr-light;
+    color: v.$clr-dark;
+    margin: 0;
+    font-family: v.$ff-primary;
+    line-height: 1.6;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+
+// typografhy
+
+h1,
+h2,
+h3 {
+    line-height: 1.1;
+    margin: 0;
+}
+
+h1 {font-size: v.$fs-h1;}
+h2 {font-size: v.$fs-h2;}
+h3 {font-size: v.$fs-h3;}

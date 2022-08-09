@@ -25,6 +25,29 @@ img{
 
 strong {font-weight: v.$fw-bold;}
 
+:focus {
+    outline: 3px solid v.$clr-accent;
+    outline-offset: 3px;
+}
+
+.btn {
+    display: inline-block;
+    padding: .5em 2.5em;
+    background: v.$clr-accent;
+    color: v.$clr-dark;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: v.$fw-bold;
+    transition: transform 200ms ease-in-out;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+}
+
 
 // typografhy
 

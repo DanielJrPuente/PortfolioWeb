@@ -36,6 +36,29 @@ strong {
   font-weight: 900;
 }
 
+:focus {
+  outline: 3px solid #16e0bd;
+  outline-offset: 3px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5em 2.5em;
+  background: #16e0bd;
+  color: #303030;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 900;
+  transition: transform 200ms ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
 h1,
 h2,
 h3 {
@@ -88,11 +111,20 @@ nav {
   position: relative;
 }
 
+.intro__img {
+  box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25), 0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+}
+
+.section__subtitle--intro {
+  display: inline-block;
+}
+
 @media (min-width: 600px) {
   .intro {
     display: grid;
     width: min-content;
     margin: 0 auto;
+    grid-column-gap: 1em;
     grid-template-areas: "img title" "img subtitle";
     grid-template-columns: min-content max-content;
   }
@@ -110,5 +142,48 @@ nav {
     position: relative;
     left: -1.5em;
     width: calc(100% + 1.5em);
+  }
+}
+.my-services {
+  background-color: #303030;
+  background-image: url(../../../img/services-bg.jpg);
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+}
+
+.section__title--services {
+  color: #16e0bd;
+  position: relative;
+}
+
+.section__title--services::after {
+  content: "";
+  display: block;
+  width: 2em;
+  height: 1px;
+  margin: 0.5em auto 1em;
+  background: #fff;
+  opacity: 0.25;
+}
+
+.services {
+  margin-bottom: 4em;
+}
+
+.service {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+@media (min-width: 600px) {
+  .services {
+    display: flex;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .service + .services {
+    margin-left: 2em;
   }
 }

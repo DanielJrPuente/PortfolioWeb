@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: v.$clr-light;
     color: v.$clr-dark;
@@ -24,11 +28,6 @@ img{
 }
 
 strong {font-weight: v.$fw-bold;}
-
-:focus {
-    outline: 3px solid v.$clr-accent;
-    outline-offset: 3px;
-}
 
 .btn {
     display: inline-block;
